@@ -32,7 +32,7 @@ def train(model, criterion,start_epoch, num_epochs, optimizer, scheduler, batch_
                                                                                     seq_len=seq_len,
                                                                                     num_features=num_features,seed=0,  **kwargs)
     else:
-        X_val, y_val,X_true,batch_clusters_val = prior.sample_clusters(batch_size=2 * batch_size,seq_len=seq_len, num_features=num_features,cluster_type=cluster_type, **kwargs)
+        X_val, y_val,X_true,batch_clusters_val = prior.generate_bayesian_gmm_data(batch_size=2 * batch_size,seq_len=seq_len, num_features=num_features,cluster_type=cluster_type, **kwargs)
 
     val_mask = (torch.zeros(batch_clusters_val.shape)).long().to(device)
 
@@ -45,7 +45,7 @@ def train(model, criterion,start_epoch, num_epochs, optimizer, scheduler, batch_
                                                                             num_features=num_features, **kwargs)
 
         else:
-            X, y, X_true, batch_clusters = prior.sample_clusters(batch_size=batch_size,seq_len=seq_len, num_features=num_features,cluster_type=cluster_type, **kwargs)
+            X, y, X_true, batch_clusters = prior.generate_bayesian_gmm_data(batch_size=batch_size,seq_len=seq_len, num_features=num_features,cluster_type=cluster_type, **kwargs)
         mask = (torch.rand(batch_clusters.shape) > 0.5).long().to(device)
         batch_clusters_masked = mask * batch_clusters
 
@@ -58,7 +58,7 @@ def train(model, criterion,start_epoch, num_epochs, optimizer, scheduler, batch_
         targets = y.reshape(-1).type(torch.LongTensor).to(device)
         batch_cluster_output = batch_cluster_output.view(-1, batch_cluster_output.shape[2])
         targets_batch_clusters = targets_batch_clusters.reshape(-1).type(torch.LongTensor).to(device)
-        targets_batch_clusters -=1 ## super janky
+        targets_batch_clusters -=1 ##
 
         # compute loss
         loss_output = criterion(output, targets)
