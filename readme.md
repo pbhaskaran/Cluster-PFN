@@ -22,7 +22,7 @@ Stores  trained Cluster-PFN models. To see all models, go to the [anonymous Goog
   - `transformer.py`: Model architecture.  
   - `prior.py`: GMM prior implementation.  
   - `utils.py`: Helper functions.  
-  - `main.py`: Main training and evaluation entry point.  
+  - `main.py`: Main training and evaluation code.  
 
 ---
 
@@ -39,7 +39,7 @@ Stores  trained Cluster-PFN models. To see all models, go to the [anonymous Goog
 ### `experiments_missingness/`  
 - **`missingness_vs_performance.ipynb`**  
   Evaluates performance vs. missingness on real-world datasets.  
-  - **Run**: Execute all cells.  
-  - For smaller experiments, reduce `iterations` or `n_inits`.  
+  - **Run**: Execute all cells 
+  - For smaller experiments,reduce `iterations` or `n_inits`.  
 
 ---
