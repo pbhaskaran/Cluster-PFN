@@ -1,6 +1,6 @@
 # Cluster-PFN  
 
-This repository contains the bare bones code for **Cluster-PFN**, a Transformer-based model that does Bayesian clustering.  
+This repository contains the bare bones code for **Cluster-PFN**, a Transformer-based model that does Bayesian clustering.  paper link: https://arxiv.org/abs/2510.24318 
 
 ---
 
