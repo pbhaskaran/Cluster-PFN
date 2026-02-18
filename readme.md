@@ -1,6 +1,6 @@
 # Cluster-PFN  
 
-This repository contains the code for **Cluster-PFN**, a Transformer-based model that does Bayesian clustering.  
+This repository contains the bare bones code for **Cluster-PFN**, a Transformer-based model that does Bayesian clustering.  
 
 ---
 
@@ -10,7 +10,7 @@ This repository contains the code for **Cluster-PFN**, a Transformer-based model
   Contains the real-world datasets used for testing missingness performance.  
 
 - **`models/`**  
-  Stores 2 trained Cluster-PFN models. Stores 2 trained Cluster-PFN models. To see all models, go to the [anonymous Google Drive link](https://drive.google.com/drive/folders/17DDGVNKo6TF0Csp0DbFO5MuIYHfTSlli).
+Stores  trained Cluster-PFN models. To see all models, go to the [anonymous Google Drive link](https://drive.google.com/drive/folders/17DDGVNKo6TF0Csp0DbFO5MuIYHfTSlli).
 
 
 - **`notebooks/`**  
