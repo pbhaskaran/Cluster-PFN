@@ -10,7 +10,7 @@ This repository contains the bare bones code for **Cluster-PFN**, a Transformer-
   Contains the real-world datasets used for testing missingness performance.  
 
 - **`models/`**  
-Stores  trained Cluster-PFN models. To see all models, go to the [anonymous Google Drive link](https://drive.google.com/drive/folders/17DDGVNKo6TF0Csp0DbFO5MuIYHfTSlli).
+Stores  trained Cluster-PFN models. To see all models, go to the [Google Drive link](https://drive.google.com/drive/folders/17DDGVNKo6TF0Csp0DbFO5MuIYHfTSlli).
 
 
 - **`notebooks/`**  
@@ -29,8 +29,8 @@ Stores  trained Cluster-PFN models. To see all models, go to the [anonymous Goog
 ## Notebooks  
 
 ### `experiments_normal/`  
-- **`old_faithful.ipynb`**  
-  Demonstrates Cluster-PFN performance on the Old Faithful dataset.  
+- **`demo.ipynb`**  
+  Demonstrates how to use Cluster-PFN on 2D and 5D data.  
 - **`cluster_and_external_metrics.ipynb`**  
   Runs experiments for computing cluster accuracy and external metrics (ARI, AMI, purity, NLL).  
   - **Run**: Execute all cells.  
